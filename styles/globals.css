@@ -1,26 +1,106 @@
-html,
 body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+*{
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1rem;
 }
+.prof_img_con{
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid #ecebf3;
+  overflow: hidden;
+  justify-self: center;
 
-a {
-  color: inherit;
+}
+.prof_img_con img{
+  width: 7rem;
+  height: 7rem;
+ border-radius: inherit;
+  object-fit: cover;
+  margin: 1rem;
+}
+.container{
+  max-width: 400px;
+  margin: 3rem auto;
+}
+.grid_2{
+  display: grid;
+  gap: 1.5rem;
+}
+.user_details_pkg{
+  display: grid;
+  grid-template-columns:repeat(2,1fr) ;
+  gap: 1rem;
+}
+a,a:visited,button{
+  font-family: inherit;
+  padding: .9em 1.5em;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+
   text-decoration: none;
+  text-align: center;
+
+}
+.btn_solid{
+  background-color: #2B293E;
+  color: #DCDBE4;
+
+}
+.btn_line{
+  color:  #2B293E;
+  border: 2px solid #2B293E;
+  background-color: #fff;
+}
+.br{
+  border-radius: 8px;
 }
 
-* {
-  box-sizing: border-box;
+
+
+.detail_box{
+  display: grid;
+  gap: .2rem;
+  border: 2px solid #DCDBE4;
+  padding: .8em;
+}
+.detail_box_heading{
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.dot{
+  width: 50px;
+  height: 50px;
+}
+.bg-gr{
+background-color: green;
+}
+.bg-r{
+ background-color: red;
+}
+.form_group{
+  display: grid;
+  gap: .3rem;
+
+}
+input{
+  border: 2px solid #ecebf3;
+  padding: 12px 8px;
+}
+label {
+  text-transform: capitalize;
+  color: #666;
 }
